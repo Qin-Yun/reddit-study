@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reddit - 首页</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <i class="fas fa-alien"></i>
+                <span>reddit</span>
+            </div>
+        </div>
+        
+        <div class="search-container">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="搜索" value="Al gent">
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <button class="icon-btn">
+                <i class="fas fa-ad"></i>
+            </button>
+            <button class="icon-btn">
+                <i class="fas fa-comment"></i>
+            </button>
+            <button class="create-btn">
+                <i class="fas fa-plus"></i>
+                创建
+            </button>
+            <button class="icon-btn">
+                <i class="fas fa-bell"></i>
+            </button>
+            <div class="user-avatar">
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+            <nav class="nav-menu">
+                <div class="nav-section">
+                    <a href="#" class="nav-item active">
+                        <i class="fas fa-home"></i>
+                        <span>首页</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-fire"></i>
+                        <span>热门</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>问答 BETA</span>
+                        <span class="beta-tag">BETA</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-users"></i>
+                        <span>探索</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-chart-pie"></i>
+                        <span>全部</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <div class="section-header">
+                        <span>自定义订阅</span>
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <button class="create-feed-btn">
+                        <i class="fas fa-plus"></i>
+                        创建自定义订阅
+                    </button>
+                </div>
+
+                <div class="nav-section">
+                    <div class="section-header">
+                        <span>最近访问</span>
+                        <i class="fas fa-chevron-up"></i>
+                    </div>
+                    <div class="recent-communities">
+                        <a href="#" class="community-item">
+                            <div class="community-icon">r/</div>
+                            <span>r/WorkOnline</span>
+                        </a>
+                        <a href="#" class="community-item">
+                            <div class="community-icon uranium">👍</div>
+                            <span>r/uraniumglass</span>
+                        </a>
+                        <a href="#" class="community-item">
+                            <div class="community-icon">r/</div>
+                            <span>r/OnlineIncomeHustle</span>
+                        </a>
+                        <a href="#" class="community-item active">
+                            <div class="community-icon">gD</div>
+                            <span>r/gamedev</span>
+                        </a>
+                        <a href="#" class="community-item">
+                            <div class="community-icon purple">👁</div>
+                            <span>r/interestingasfuck</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- 主内容区域 -->
+        <main class="main-content">
+            <!-- 标签栏 -->
+            <div class="tabs">
+                <button class="tab active">帖子</button>
+                <button class="tab">社区</button>
+                <button class="tab">评论</button>
+                <button class="tab">媒体</button>
+                <button class="tab">用户</button>
+            </div>
+
+            <!-- 筛选选项 -->
+            <div class="filters">
+                <select class="filter-dropdown">
+                    <option>相关性</option>
+                </select>
+                <select class="filter-dropdown">
+                    <option>所有时间</option>
+                </select>
+            </div>
+
+            <!-- 帖子列表 -->
+            <div class="posts-container">
+                <article class="post">
+                    <div class="post-header">
+                        <span class="subreddit">r/Suriname</span>
+                        <span class="time">6天前</span>
+                    </div>
+                    <h3 class="post-title">Wat vindt u van het gebruik van Al in onze cultuur?</h3>
+                    <div class="post-meta">
+                        <span class="votes">31 票</span>
+                        <span class="comments">38 评论</span>
+                    </div>
+                    <div class="post-preview">
+                        <div class="image-grid">
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                            <div class="grid-item"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="post-header">
+                        <span class="subreddit">r/AmmonHillman</span>
+                        <span class="time">2天前</span>
+                    </div>
+                    <h3 class="post-title">Galen Al App.</h3>
+                    <div class="post-meta">
+                        <span class="votes">19 票</span>
+                        <span class="comments">13 评论</span>
+                    </div>
+                    <div class="post-preview">
+                        <div class="webpage-preview">
+                            <div class="preview-content">
+                                <div class="preview-title">网页预览</div>
+                                <div class="preview-url">example.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="post-header">
+                        <span class="subreddit">r/AskArgentina</span>
+                        <span class="time">1天前</span>
+                    </div>
+                    <h3 class="post-title">Soy el único que siente que es totalmente imposible tomarse en serio a la gente que usa Al/ChatGPT...etc.?</h3>
+                    <div class="post-meta">
+                        <span class="votes">0 票</span>
+                        <span class="comments">66 评论</span>
+                    </div>
+                </article>
+
+                <article class="post">
+                    <div class="post-header">
+                        <span class="subreddit">r/AI_Agents</span>
+                        <span class="time">3小时前</span>
+                    </div>
+                    <h3 class="post-title">What's the Most Useful Al Agent You've Seen?</h3>
+                    <div class="post-meta">
+                        <span class="votes">159 票</span>
+                        <span class="comments">129 评论</span>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- 右侧边栏 -->
+        <aside class="right-sidebar">
+            <div class="communities-section">
+                <h3>社区</h3>
+                <div class="community-list">
+                    <div class="community-card">
+                        <div class="community-icon orange">🤖</div>
+                        <div class="community-info">
+                            <div class="community-name">r/aigents</div>
+                            <div class="community-desc">Creating and growing personal...</div>
+                            <div class="community-stats">231 成员 • 1 在线</div>
+                        </div>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon purple">🎨</div>
+                        <div class="community-info">
+                            <div class="community-name">r/generativeAI</div>
+                            <div class="community-desc">AI-generated content and art</div>
+                            <div class="community-stats">1.2k 成员 • 5 在线</div>
+                        </div>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon blue">r/</div>
+                        <div class="community-info">
+                            <div class="community-name">r/aigent</div>
+                            <div class="community-desc">AI agent discussions</div>
+                            <div class="community-stats">456 成员 • 2 在线</div>
+                        </div>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon purple">👁</div>
+                        <div class="community-info">
+                            <div class="community-name">r/AIGenArt</div>
+                            <div class="community-desc">AI-generated artwork</div>
+                            <div class="community-stats">789 成员 • 3 在线</div>
+                        </div>
+                    </div>
+
+                    <div class="community-card">
+                        <div class="community-icon blue">r/</div>
+                        <div class="community-info">
+                            <div class="community-name">r/bigsleep</div>
+                            <div class="community-desc">BigSleep AI discussions</div>
+                            <div class="community-stats">123 成员 • 0 在线</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
